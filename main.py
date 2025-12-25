@@ -16,7 +16,7 @@ while True:
 
     motion_value, mask = detect_motion_ml(frame)
 
-    if motion_value > 3000:   # Threshold
+    if motion_value > 3000:   
         event = {
             "timestamp": time.strftime('%Y-%m-%d %H:%M:%S'),
             "event_type": "ml_motion_detected",
